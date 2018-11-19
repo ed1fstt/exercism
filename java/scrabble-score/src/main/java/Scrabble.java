@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.Arrays;
 public class Scrabble {
     private static String input;
@@ -6,24 +7,21 @@ public class Scrabble {
     }
     int getScore() {
         int rezScore =0;
-        Character ar1[] = {'a','e','i','o','u','l','n','r','s','t'};
-        Character ar2[] = {'d','g'};
-        Character ar3[] = {'b','c','m','p'};
-        Character ar4 []= {'f','h','v','w','y'};
-        Character ar5 []= {'k'};
-        Character ar8[] = {'j','x'};
-        Character ar10[] = {'q','z'};
+        Character[] ar1 = {'a','e','i','o','u','l','n','r','s','t'};
+        Character[] ar2 = {'d','g'};
+        Character[] ar3 = {'b','c','m','p'};
+        Character[] ar4 = {'f','h','v','w','y'};
+        Character[] ar5 = {'k'};
+        Character[] ar8 = {'j','x'};
+        Character[] ar10 = {'q','z'};
+       ArrayList<Character> arl1 = getList("aeioulnrst");
+       
 
-        while (input.contains(" ")){
-            input =input.replace(" ","");
-        };
-        input=input.toLowerCase();
-
-        char[] inputAr =input.toCharArray();
-
+        input = input.toLowerCase();
+        char[] inputAr = input.replace(" ","").toCharArray();
         Arrays.sort(inputAr);
 
-        for(int i=0;i<inputAr.length;i++){
+        for(int i = 0; i<inputAr.length; i++){
             if (Arrays.asList(ar1).contains(inputAr[i])){
                 rezScore++;
             }else if (Arrays.asList(ar2).contains(inputAr[i])){
@@ -41,5 +39,12 @@ public class Scrabble {
             }
         }
         return rezScore;
+    }
+   public  ArrayList<Character> getList(String words){
+        ArrayList<Character> sampleList = new ArrayList<Character>();
+        for(int i =  0; i<words.lenght(); i++){
+            sampleList.add(words.charAt(i));
+        }
+        return sampleList;
     }
 }
