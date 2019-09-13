@@ -5,7 +5,6 @@ import java.util.Map;
 
 public class Scrabble {
     private static String input;
-    private Map<Character, Integer> map = new HashMap<>();
 
     Scrabble(String finput) {
         input = finput;
@@ -64,9 +63,5 @@ public class Scrabble {
             sampleList.add(words.charAt(i));
         }
         return sampleList;
-    }
-
-    public void putAll (Character CharacterSec, Integer score) {
-        map.put(CharacterSec, score);
     }
 }
