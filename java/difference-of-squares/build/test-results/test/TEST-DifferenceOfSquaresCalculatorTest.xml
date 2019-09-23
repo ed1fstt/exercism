@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="DifferenceOfSquaresCalculatorTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2019-09-21T10:41:40" hostname="manyama" time="0.004">
+<testsuite name="DifferenceOfSquaresCalculatorTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2019-09-23T10:23:03" hostname="manyama" time="0.004">
   <properties/>
   <testcase name="testDifferenceOfSquaresUpToHundred" classname="DifferenceOfSquaresCalculatorTest" time="0.001"/>
   <testcase name="testSquareOfSumUpToOne" classname="DifferenceOfSquaresCalculatorTest" time="0.0"/>
   <testcase name="testSquareOfSumUpToHundred" classname="DifferenceOfSquaresCalculatorTest" time="0.0"/>
   <testcase name="testDifferenceOfSquaresUpToOne" classname="DifferenceOfSquaresCalculatorTest" time="0.0"/>
-  <testcase name="testSumOfSquaresUpToHundred" classname="DifferenceOfSquaresCalculatorTest" time="0.0"/>
+  <testcase name="testSumOfSquaresUpToHundred" classname="DifferenceOfSquaresCalculatorTest" time="0.001"/>
   <testcase name="testSquareOfSumUpToFive" classname="DifferenceOfSquaresCalculatorTest" time="0.0"/>
   <testcase name="testDifferenceOfSquaresUpToFive" classname="DifferenceOfSquaresCalculatorTest" time="0.0"/>
   <testcase name="testSumOfSquaresUpToOne" classname="DifferenceOfSquaresCalculatorTest" time="0.0"/>

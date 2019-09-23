@@ -1,25 +1,23 @@
 class DifferenceOfSquaresCalculator {
 
     int computeSquareOfSumTo(int input) {
-        int sqOfSum = 0;
+        int squareOfSum = 0;
         for (int i = 1; i <= input; i++) {
-            sqOfSum += i;
+            squareOfSum += i;
         }
-        return (int)Math.pow(sqOfSum,2);
+        return (int)Math.pow(squareOfSum,2);
     }
 
     int computeSumOfSquaresTo(int input) {
-        int sumOfSq = 0;
+        int sumOfSquares = 0;
         for ( int i = 1; i <= input; i++) {
-            sumOfSq += (int)Math.pow(i,2);
+            sumOfSquares += (int)Math.pow(i,2);
         }
-        return sumOfSq;
+        return sumOfSquares;
     }
 
     int computeDifferenceOfSquares(int input) {
-        int diff = 0;
-        diff = computeSquareOfSumTo(input) - computeSumOfSquaresTo(input);
-        return diff;
+        return computeSquareOfSumTo(input) - computeSumOfSquaresTo(input);
     }
 
 }
